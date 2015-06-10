@@ -1,6 +1,7 @@
 
  /**
   * 1. Allgemeine Basisdefintionen
+  * 10.06.2015 WAL
   */  
   
   // Anzahle der Bilder
