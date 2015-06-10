@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Floaten</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+  <style type="text/css">
+  
+    *
+    {
+      margin: 0px;
+      padding: 0px;     
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+    
+    body
+    {
+      font-size: 0.8em;
+      color: #444;            
+    }
+    
+    div
+    {
+      padding: 10px;
+      border: 1px solid #000;
+    }
+    
+    div.rahmen
+    {            
+      margin: 10px;                      
+    }
+    
+    div.oben
+    {
+      margin-bottom: 10px;
+    }
+    
+    div.content
+    {
+      margin-bottom: 10px;
+    }
+    
+    div.links
+    {
+      width: 20em;
+      float: left;
+    }
+    
+    div.rechts
+    {
+      width: 20em;
+      float: right;
+    }
+    
+    div.mitte
+    {
+      margin: 0px 23em 0px 23em;
+    }
+            
+    div.content:after 
+    {
+      content: "."; 
+      display: block;             
+      clear: both; 
+      visibility: hidden;
+      height: 0;
+    }
+    
+    * html div.content
+    {
+      height: 1px;
+    }
+    
+    *+html div.content
+    {
+      border: 1px solid #f00;
+      display: inline-block
+    }
+     
+  </style>
+</head>
+
+<body>
+  <div class="rahmen">
+    <div class="oben">Oben</div>
+    <div class="content">
+      <div class="links">
+        Fa ivi evado Consulo re bivium Redux facio infirmatio. Ut perseverantia me. In ago lues irreverens Exorior Qua Virus ara 
+        Repletus eo boo Vulcanus con.
+      </div>
+      <div class="rechts">
+        Ut dux Adsum. Pluo horum ubi consulo vegeto Promus ubi Caput. Vis Antea tot dux qualiscumque incompositus, non pessum se census 
+        rationabiliter Cras injustus qui. Sis canalis sententiosus Mico, fio eo.
+      </div>
+      <div class="mitte">
+        Faveo frequentatio conscius rarus fio. Tam Uber hospitium cupido, os erogo vos nam Flax in quater stupendum amitto 
+        arduum ars Relinquo perennis, sensim quo Exsto te has Laedo licet, nam Luminosus haud. 
+      </div>            
+    </div>
+    <div class="unten">Unten</div>
+  </div>
+</body>
+</html>

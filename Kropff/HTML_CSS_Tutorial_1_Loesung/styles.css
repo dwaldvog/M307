@@ -1,0 +1,215 @@
+    
+  body
+  {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  .rahmen
+  {
+    width: 740px;           /* Anpassung für 800x600 */
+    margin: 0px auto;
+  }
+
+  .schmuck
+  {
+    width: 740px;
+    height: 100px;
+  }
+
+  .navi
+  {
+    width: 740px;
+    height: 26px;
+    background-color: #002274;
+  }
+
+  .subnavi
+  {
+    width: 140px;
+    margin-top: 10px;       /* Abstand nach oben   */
+    margin-right: 10px;     /* Abstand nach rechts */
+    margin-bottom: 10px;    /* Abstand nach unten   */
+    clear: both;
+    float: left;    
+  }
+
+  .inhalt
+  {
+    width: 440px;
+    margin-top: 10px;       /* Abstand nach oben   */
+    margin-right: 10px;     /* Abstand nach rechts */
+    margin-bottom: 10px;    /* Abstand nach unten  */
+    float: left;
+  }
+
+  .info
+  {
+    width: 128px;
+    margin-top: 10px;       /* Abstand nach oben */
+    float: left;
+    border: 1px solid #002274;
+    background-color: #DDE8F3;
+    padding: 5px;
+  }
+
+  .abschluss
+  {
+    /* macht das float: left aus info rückgängig */
+    clear: left;
+    border-top: 1px solid #000;
+    padding: 5px;
+  }
+
+  a
+  {
+    text-decoration: none;
+  }
+
+  .navi a
+  {
+    color: #fff;
+    background-color: #002274;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    float: left;
+    border: 1px solid #002274;
+  }
+
+  .navi a:hover
+  {
+    color: #002274;
+    background-color: #fff;
+  }
+
+  .navi .aktiv
+  {
+    color: #002274;
+    background-color: #fff;
+  }
+
+  .subnavi ul
+  {
+    margin-top: 0px;
+    list-style-type: none;
+  }
+
+  .subnavi li
+  {
+    margin-left: -40px;
+  }
+
+  .subnavi li li
+  {
+    margin-left: -30px;
+  }
+
+  .subnavi a
+  {
+    background-color: #eee;
+    color: #000;
+    padding: 5px 10px 5px 20px;
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
+
+  .subnavi a:hover
+  {
+    background-color: #DDE8F3;
+    background-image: url(pics/menue/marker.gif);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  .subnavi .aktiv
+  {
+    background-color: #DDE8F3;
+    background-image: url(pics/menue/marker.gif);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  h1
+  {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #002274;
+  }
+
+  h2
+  {
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #002274;
+  }
+
+  h3
+  {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .inhalt ul
+  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .inhalt li
+  {
+    margin-left: -25px;
+  }
+
+  p
+  {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .inhalt img
+  {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .bild
+  {
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  h4
+  {
+    font-size: 11px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .info a
+  {
+    color: #002274;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .info a:hover
+  {
+    color: #000;
+    text-decoration: underline;
+  }
+    
+  .bild
+  {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  .inhalt img
+  {
+    display: block;
+    margin-bottom: 5px;
+  }

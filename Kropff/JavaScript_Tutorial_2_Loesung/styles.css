@@ -1,0 +1,87 @@
+
+  *
+  {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body
+  {
+    font-size: 0.8em;
+    color: #444;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+  
+  h1
+  {
+    font-size: 1.2em;
+    color: #f00;
+  }
+  
+  h2
+  {
+    font-size: 1.0em;
+    margin-bottom: 10px;
+  }
+  form
+  {
+    width: 710px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  fieldset
+  {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 320px;
+    float: left;
+    margin-bottom: 10px;
+  } 
+  
+  fieldset p
+  {
+    margin-bottom: 10px;
+  }
+  
+  legend
+  {
+    font-weight: bold;
+    padding: 0 10px;
+  }
+  
+  fieldset.links input 
+  {
+    width: 180px;
+  }
+  
+  fieldset.links select
+  {
+    width: 184px;
+  }
+  
+  fieldset.links
+  {
+    margin-right: 20px;
+  }
+  
+  fieldset.links label
+  {
+    float: left;
+    width: 130px;
+  }
+  
+  fieldset.rechts label
+  {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  p.clear
+  {
+    clear: left;
+    text-align: center;
+  }
+  
+  

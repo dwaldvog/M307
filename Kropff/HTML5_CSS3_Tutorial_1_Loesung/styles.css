@@ -1,0 +1,221 @@
+  @font-face {
+    font-family: 'BankGt';
+    src: url('fonts/bnkgothm.eot') format('embedded-opentype');
+    src: url('fonts/bnkgothm.woff') format('woff'), 
+         url('fonts/bnkgothm.ttf') format('truetype'); 
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;   
+  }
+  
+  body
+  {
+    font-size: 13px;
+    color: #444;   
+    font-family: BankGt;
+  }
+  
+  h1, h2 {
+    color: #00f;
+    margin-bottom: 10px;
+    text-shadow:2px 2px 1px #0049ff, 
+                4px 4px 1px #0078ff,
+                6px 6px 1px #00beff,   
+                8px 8px 1px #0ff;    
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  div.wrapper {
+    width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #dadada;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #888;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+ 
+  header nav {
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #00f;
+    background: -webkit-linear-gradient(#0ff, #00f);
+    background: linear-gradient(#0ff, #00f);   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffff,endColorstr=#0000ff);
+  }
+  
+  header nav:after {
+    content: "."; 
+    display: block;             
+    clear: both;
+    visibility: hidden;
+    height: 0;
+  }
+  
+  header nav > ul > li {
+    float: left;
+    margin-left: 15px;
+    position: relative;
+  }
+  
+  header nav > ul > li:first-child {
+    margin-left: 0;
+  }
+  
+  header nav ul a {    
+    margin-left: 23px;
+    color: #0ff;
+    padding: 5px 10px;
+    background: #00f;
+    text-align: center;
+    width: 80px;
+    box-shadow: 0 0 0 1px #003fff, 0 0 0 2px #00a1ff, 0 0 0 3px #0ff;
+  }
+  
+  header nav li a:hover {
+    color: #00f;
+    background: #0ff;
+    box-shadow: 0 0 0 1px #0ff, 0 0 0 2px #00a1ff, 0 0 0 3px #003fff;
+  }
+
+  header nav ul ul a {
+    margin: 0;
+    display: block;
+  }
+  
+  header nav ul ul li {
+    margin: 0;
+    padding: 3px;
+    border-top: 1px solid #000;
+  }
+  
+  header nav ul ul li:first-child {
+    border-top: none;
+  }
+  
+  header nav ul div {
+    position: absolute;
+    top: 19px;
+    padding-top: 11px;
+    display: none;
+  }
+  
+  header nav ul ul {
+    border: solid 20px;
+    border-image: url('pics/subnav.gif') 27 15 27 15 round round;
+    -o-border-image: url('pics/subnav.gif') 27 15 27 15 round round;
+    -webkit-border-image: url('pics/subnav.gif') 27 15 27 15 round round;
+  }
+  
+  header nav > ul > li > a:hover + div,  header nav > ul > li div:hover {
+    display: block;
+  }
+  
+  div.main {
+    margin-top: 20px;
+  }
+  
+  aside {
+    width: 180px;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    color: #000;
+    border-radius:5px;
+    box-shadow: 0 0 0 2px #c8c8c8, 0 0 0 4px #d2d2d2, 
+                0 0 0 6px #dcdcdc, 0 0 0 8px #e6e6e6, 
+                0 0 0 10px #f0f0f0, 0 0 0 11px #b4b4b4;
+  }
+  
+  aside h3 {
+    background: -webkit-linear-gradient(#0ff, #00f);
+    background: linear-gradient(#0ff, #00f);  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffff,endColorstr=#0000ff);
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    padding: 3px;
+    font-weight: normal;
+    margin: -16px -16px 0 -16px;
+  }
+  
+  aside p {
+    text-align: justify;
+    font-size: 0.95em;
+  }
+  
+  aside:last-child p {
+    color: #0ff;
+    background: #00f;
+    margin: 0 -5px -5px -5px;
+    border-top: 1px solid #c8c8c8;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+  }
+  
+  div.content {
+    width: 470px;
+    float: left;
+    margin: 0 10px 20px 10px;
+  }
+  
+  div.content p {
+    margin-bottom: 10px;
+  }
+  
+  div.content ul {
+    list-style: disc;
+  }
+    
+  div.content li {    
+    margin-left: 10px;
+  }
+  
+  div.content p + ul {
+    border: 1px solid #dadada;
+    border-radius: 20px;    
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+    
+  div.content > ul > li:nth-child(2n), 
+  div.content ul > li > ul > li:nth-child(3n+2) { 
+    color: #00f;
+  }
+  
+  div.content h1 ~ ul ul {
+    border-top: 1px solid #00f;
+    border-bottom: 1px solid #00f;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+  
+  footer {
+    clear: both;
+    border: 1px solid #dadada;
+    padding: 10px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(#ededed, #dadada, #ededed);
+    background: linear-gradient(#ededed, #dadada, #dadada, #ededed);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ededed,endColorstr=#dadada);
+  }
+  
+  footer p {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #00f;
+    color: #fff;
+    background: -webkit-linear-gradient(89.5deg, #0ff 5px, #00f 20px, #0ff 30px);
+    background: linear-gradient(0.5deg, #0ff 5px, #00f 20px, #0ff 30px); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffff,endColorstr=#0000ff);      
+  }

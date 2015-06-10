@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="de">
+  <head>
+    <title>JavaScript-Tutorial 2</title>    
+    <script type="text/javascript" src="check.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" /> 
+  </head>
+  <body>
+    <form action="send.php" method="post" name="jobangebot" onsubmit="return checkForm();">
+      <h1>Hinweis</h1>
+      <h2>Bitte alle Felder mit (*) ausfüllen, sonst wird das nichts mit uns!</h2>
+      <fieldset class="links">
+        <legend>Daten</legend>
+        <p>
+          <label>(*) Vorname</label>
+          <input type="text" name="Vorname" onmousedown="clearField(this)" />
+        </p>
+        <p>
+          <label>(*) Name</label>
+          <input type="text" name="Name" onmousedown="clearField(this)" />
+        </p>
+        <p>
+          <label>(*) Straße</label>
+          <input type="text" name="Strasse" onmousedown="clearField(this)" />
+        </p>
+        <p>
+          <label>(*) PLZ, Ort</label>
+          <input type="text" name="PLZ" style="width: 40px;" onmousedown="clearField(this)" />
+          <input type="text" name="Ort" style="width: 130px;" onmousedown="clearField(this)" />
+        </p>
+        <p>
+          <label>(*) Telefon</label>
+          <input type="text" name="Telefon" onmousedown="clearField(this)" />
+        </p>
+        <p>
+          <label>(*) E-Mail</label>
+          <input type="text" name="Mail" onmousedown="clearField(this)" />
+        </p>
+        <p>
+          <label>(*) Gehaltswunsch</label>
+          <select name="Gehaltswunsch">
+            <option value="">----------------------------------------</option>
+            <option value="2500">mindenstens 2500 Euronen</option>
+            <option value="3000">mindenstens 3000 Euronen</option>
+            <option value="3500">mindenstens 3500 Euronen</option>
+            <option value="4000">mindenstens 4000 Euronen</option>
+            <option value="4500">mindenstens 4500 Euronen</option>
+            <option value="5000">mindenstens 5000 Euronen</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset class="rechts"> 
+        <legend>Kenntnisse</legend>
+        <p>
+          <label>Schulabschluss</label>
+          <input type="radio" name="Schulabschluss" value="Hauptschule" onclick="setPreferences(this.value);" /> Hauptschule
+          <input type="radio" name="Schulabschluss" value="Realschule" onclick="setPreferences(this.value);" /> Realschule
+          <input type="radio" name="Schulabschluss" value="Gymnasium" onclick="setPreferences(this.value);" /> Gymnasium
+        </p>
+        <p>
+          <label>Ausbildung</label>
+          <input type="checkbox" name="Ausbildung[]" value="MATA" onclick="getGradution();" /> MATA<br />
+          <input type="checkbox" name="Ausbildung[]" value="MATSE" onclick="getGradution();" /> MATSE<br />
+          <input type="checkbox" name="Ausbildung[]" value="FIAE" onclick="getGradution();" /> FIAE<br />
+          <input type="checkbox" name="Ausbildung[]" value="BA Inf." onclick="getGradution();" /> BA Inf.<br />
+          <input type="checkbox" name="Ausbildung[]" value="MA Inf." onclick="getGradution();" /> MA Inf.<br />
+          <input type="checkbox" name="Ausbildung[]" value="Dipl. Inf." onclick="getGradution();"  /> Dipl. Inf.
+        </p>        
+      </fieldset>
+      <p class="clear">
+        <input type="submit" value="Senden" />
+      </p>
+    </form>
+  </body>
+</html>

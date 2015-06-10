@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="de">
+  <head>
+    <title>JavaScript-Tutorial 1</title>    
+    <script type="text/javascript" src="code.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" /> 
+  </head>
+  <body onload="scroll_ele  = document.getElementById('navi');">
+    <div class="rahmen">
+      <div class="menue">
+        <p class="links">
+          <a href="#" 
+            onmouseover="moveLeft();" 
+            onmouseout="stopLeft();" 
+            onmousedown="tempo=20;" 
+            onmouseup="tempo=10;">&lt;&lt;
+          </a>
+        </p>
+        <div class="scroller">
+          <div id="navi" style="left: 0px;">
+            <script type="text/javascript">
+              for (i = 0; i < pic_num; i++)
+              {
+                document.write ('<a href="#" onclick="showDetails(' + i + ');">');
+                document.write ('<img src="pics/low/' + i + '.jpg" />');
+                document.write ('</a>');
+              }
+            </script>
+          </div>
+        </div>
+        <p class="rechts">
+          <a href="#" 
+            onmouseover="moveRight();" 
+            onmouseout="stopRight();" 
+            onmousedown="tempo=20;" 
+            onmouseup="tempo=10;">&gt;&gt;
+          </a>
+        </p>
+      </div>
+      <div class="content">
+        <p class="image">
+          <img src="pics/high/0.jpg" width="400" height="300" name="bild" />
+        </p>
+        <p id="description">
+          Die ehemalige venezianische Botschaft, bevor Italien ein einheitlicher Staat wurde.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
